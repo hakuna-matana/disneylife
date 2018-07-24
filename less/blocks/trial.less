@@ -1,0 +1,58 @@
+.trial {
+  min-height: 662px;
+  background-image: url("../img/bg_main.png");
+  background-size: cover;
+  background-position: 20% 0;  
+  background-repeat: no-repeat;
+}
+
+.trial__wrapper {
+  .wrapper();
+}
+
+.trial__title {
+  .title-style(@color: white);
+  line-height: 55px;
+  & span {
+    font-family: "Gotham Light", "Arial", sans-serif;
+    font-weight: normal;
+  }
+}
+
+.trial__title::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: @color-pink;
+}
+
+
+.subscription__wrapper::after {
+  width: 80px;
+  background-color: @color-blue;
+  left: 50%;
+  transform: translateX(40%);
+}
+
+.trial__description {
+  .remark-style(white);
+}
+
+.trial__btn {
+  .btn-style(white, @color-green);
+}
+
+.trial__btn-wrapper::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: @color-yellow;
+}
+
+.trial__image {
+  position: absolute;
+}

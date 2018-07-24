@@ -1,0 +1,86 @@
+// .page-header {
+//   position: relative;
+//   min-height: 1000px;
+//   background-color: white;
+//   background-image: linear-gradient(-288.8deg, transparent 50.2%, @color-pink 50.2%),
+//                     linear-gradient(191deg, @color-blue 855px,transparent 855px),
+//                     linear-gradient(-188deg, @color-yellow 980px,transparent 980px);
+//   background-size: 100% 980px,
+//                    100% 100%,
+//                    100% 100%; 
+//   background-position: right top,
+//                        0 0,
+//                        0 0;
+//   background-repeat: no-repeat;
+
+//     &::before {
+//     content: "";
+//     position: absolute;
+//     right: 0;
+//     bottom: 20px;
+//     display: block;
+//     width: 0;
+//     height: 0;
+//     border: none;
+
+//     @media(min-width: 400px) {
+//       border-top: 8px solid transparent;
+//       border-right: 90px solid transparent;
+//       border-left: 90px solid white;
+//       border-bottom: 8px solid white;
+//     }
+
+//     @media(min-width: 700px) {
+//       border-top: 16px solid transparent;
+//       border-right: 160px solid transparent;
+//       border-left: 160px solid white;
+//       border-bottom: 16px solid white;
+//     }
+
+//     @media(min-width: 970px) {
+//       border-top: 26px solid transparent;
+//       border-right: 230px solid transparent;
+//       border-left: 230px solid white;
+//       border-bottom: 26px solid white;
+//     }
+
+//     @media(min-width: 1200px) {
+//       border-top: 35px solid transparent;
+//       border-right: 300px solid transparent;
+//       border-left: 300px solid white;
+//       border-bottom: 35px solid white;
+//     }
+
+//     @media(min-width: 1500px) {
+//       border-top: 40px solid transparent;
+//       border-right: 350px solid transparent;
+//       border-left: 350px solid white;
+//       border-bottom: 40px solid white;
+//     }
+
+//     @media(min-width: 1650px) {
+//       border-top: 45px solid transparent;
+//       border-right: 410px solid transparent;
+//       border-left: 410px solid white;
+//       border-bottom: 45px solid white;
+//     }
+//   }
+// }
+
+
+.page-header {
+  min-height: 1000px;
+  background-image: url("../img/bg_header.png");
+  background-size: cover;
+  background-position: center 0;  
+  background-repeat: no-repeat;
+}
+
+.page-header__wrapper {
+  .wrapper();
+  padding-top: 50px;
+}
+
+.page-header__image {
+  position: absolute;
+}

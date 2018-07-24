@@ -1,0 +1,36 @@
+.watch {
+
+}
+
+.watch__wrapper {
+  .wrapper();
+}
+
+.watch__title {
+  color: black;
+  font-family: "Gotham Bold", "Arial", sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+}
+
+.watch__description {
+  color: @color-gray;
+  font-family: "Gotham", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+
+  & b {
+    font-family: "Gotham Medium", "Arial", sans-serif;
+    font-weight: normal;
+  }
+}
+
+.watch__btn {
+  .btn-style(@bg-color: @color-green, @color: white)
+}
+
+.watch__remark {
+  .remark-style(@color-lightgray);
+}

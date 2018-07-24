@@ -1,0 +1,42 @@
+.subscribe__text {
+  color: white;
+  font-family: "Gotham Light", "Arial", sans-serif;
+  font-size: 45px;
+  line-height: 54px;
+  letter-spacing: -0.04em;
+}
+
+.subscribe__title {
+  color: white;
+  font-family: "Gotham Bold", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -0.04em;
+}
+
+.subscribe__title::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: @color-yellow;
+}
+
+.subscribe__btn {
+  .btn-style();
+}
+
+.subscribe__btn-wrapper::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: @color-blue;
+}
+
+.subscribe__remark {
+  .remark-style();
+  opacity: 0.5;
+}
