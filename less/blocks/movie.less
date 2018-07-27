@@ -8,6 +8,7 @@
 
 .movie__wrapper {
   .wrapper();
+  position: relative;
 }
 
 .movie__list {
@@ -20,6 +21,9 @@
 
 .movie__image {
   position: absolute;
+  right: 0;
+  width: 151.5px;
+  height: 183px;
 }
 
 .movie__slider-arrow {
@@ -65,4 +69,30 @@
 .movie__slider-arrow--right::after {
   transform: rotate(-45deg);
   left: 51px;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 960px) {
+  .movie__image {
+    position: absolute;
+    right: 0;
+    width: 202px;
+    height: 244px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .movie__image {
+    position: absolute;
+    right: 0;
+    width: 303px;
+    height: 366px;
+  }
+}
+
+@media (min-width: 1800px) {
+
 }

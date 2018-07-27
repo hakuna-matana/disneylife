@@ -8,6 +8,7 @@
 
 .page-footer__wrapper {
   .wrapper();
+  position: relative;
 }
 
 .page-footer__list {
@@ -26,4 +27,37 @@
 .page-footer__copyright {
   .remark-style(@color-lightpink);
   font-size: 12px;
+}
+
+.page-footer__image {
+  position: absolute;
+  left: 0;
+  width: 177px;
+  height: 274.5px;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 960px) {
+  .page-footer__image {
+    position: absolute;
+    left: 0;
+    width: 236px;
+    height: 366px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .page-footer__image {
+    position: absolute;
+    left: 0;
+    width: 354px;
+    height: 549px;
+  }
+}
+
+@media (min-width: 1800px) {
+
 }
