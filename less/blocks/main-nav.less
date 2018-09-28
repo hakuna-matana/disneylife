@@ -1,6 +1,8 @@
 .main-nav {
+  position: relative;
   text-align: center;
   margin-bottom: 40px;
+  z-index: 200;
 }
 
 .main-nav__list {
@@ -23,6 +25,10 @@
   font-size: 16px;
   line-height: 32px;
   font-family: "Gotam Medium", Arial, sans-serif;
+  .main-nav__item:hover & {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 
@@ -31,12 +37,27 @@
   font-size: 0;
   width: 43px;
   height: 43px;
+  &:hover svg {
+    circle:first-child {
+      fill: white;
+      stroke-width: 0;
+    }
+    circle:nth-child(n + 2) {
+      stroke: #ff4b64;
+    }
+  }
 }
 
-.main-nav__link--btn {
+.main-nav__link-btn {
   .btn-style();
   padding-top: 5px;
   padding-bottom: 5px;
+  &:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin: -2px;
+  }
 }
 
 @media (min-width: 610px) {
