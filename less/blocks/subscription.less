@@ -4,14 +4,6 @@
   padding-top: 60px;
 }
 
-.subscription__list {
-  .list-style-base();
-}
-
-.subscription__item {
-  .li-base();
-}
-
 .subscription__title {
   .title-style();
 }
@@ -41,7 +33,49 @@
   .description-style();
 }
 
+.subscription__channel {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 1px;
+    background-color: #c9c6bf;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: #c9c6bf;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.subscription__list {
+  .list-style-base();
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 100%));
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 15px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
 .subscription__item {
+  .li-base();
+  position: relative;
   padding-left: 35px;
   font-family: "Gotham", "Arial", sans-serif;
   font-size: 17px;
@@ -52,14 +86,40 @@
     font-family: "Gotham Bold", "Arial", sans-serif;
     font-weight: normal;
   }
+
+  span {
+    position: relative;
+  }
+
+  span::before {
+    position: absolute;
+    left: -30px;
+    top: 0;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/icon_list.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.subscription__btn-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscription__btn {
   .btn-style(@bg-color: @color-blue, @color: white);
+  
+  text-align: center;
 }
 
 .subscription__remark {
   .remark-style(@color: @color-lightgray);
+  margin-top: 10px;
 }
 
 
@@ -69,11 +129,16 @@
 }
 
 @media (min-width: 960px) {
-
+  .subscription__list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 50%));
+    text-align: left;
+  }
 }
 
 @media (min-width: 1260px) {
-
+  .subscription__list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 33%));
+  }
 }
 
 @media (min-width: 1800px) {

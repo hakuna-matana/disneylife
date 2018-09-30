@@ -1,9 +1,19 @@
 .channel__list {
   .list-style-base();
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 55px;
 }
 
 .channel__item {
   .li-base();
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 15px;
 }
 
 @media (min-width: 768px) {
@@ -11,7 +21,9 @@
 }
 
 @media (min-width: 960px) {
-
+  .channel__list {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1260px) {
