@@ -9,43 +9,109 @@
 .page-footer__wrapper {
   .wrapper();
   position: relative;
+  padding-top: 140px;
 }
 
 .page-footer__list {
   .list-style-base();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page-footer__item {
   .li-base();
 }
 
+.page-footer__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
 .page-footer__link {
   .remark-style(@color-lightpink);
   text-decoration: none;
+  line-height: 24px;
+  &:hover {
+    color: #fff;
+  }
 }
 
 .page-footer__copyright {
   .remark-style(@color-lightpink);
   font-size: 12px;
+  line-height: 24px;
+  margin: 0;
 }
 
 .page-footer__image {
   position: absolute;
   left: 0;
+  top: -80px;
   width: 177px;
   height: 274.5px;
 }
 
-@media (min-width: 768px) {
 
+
+@media (min-width: 768px) {
+  .page-footer__list {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    justify-content: center;
+  }
+
+  .page-footer__item {
+    padding-left: 13px;
+    position: relative;
+  
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      content: "";
+      display: block;
+      width: 3px;
+      height: 3px;
+      background-color: @color-lightpink;
+      border-radius: 50%;
+    }
+  }
+
+  .page-footer__image {
+    top: -120px;
+  }
 }
 
 @media (min-width: 960px) {
   .page-footer__image {
     position: absolute;
     left: 0;
+    top: -160px;
     width: 236px;
     height: 366px;
+  }
+
+  .page-footer__item {
+    padding-left: 26px;
+    padding-right: 20px;
+    position: relative;
+  
+    &:not(:first-child)::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      content: "";
+      display: block;
+      width: 3px;
+      height: 3px;
+      background-color: @color-lightpink;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -53,8 +119,25 @@
   .page-footer__image {
     position: absolute;
     left: 0;
+    top: -280px;
     width: 354px;
     height: 549px;
+  }
+
+  .page-footer__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-footer__item {
+    &:first-child::before {
+      display: none;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .page-footer__image {
+    left: -160px;
   }
 }
 

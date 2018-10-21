@@ -166,42 +166,54 @@
           <ul class="movie__list">
             <li class="movie__item">
               <img src="img/photo-1.jpg" alt="" class="movie__item-image">
+              <span class="movie__item-icon"></span>
             </li>
             <li class="movie__item">
               <img src="img/photo-2.jpg" alt="" class="movie__item-image">
+              <span class="movie__item-icon"></span>
             </li>
             <li class="movie__item">
               <img src="img/photo-3.jpg" alt="" class="movie__item-image">
+              <span class="movie__item-icon"></span>
             </li>
             <li class="movie__item">
               <img src="img/photo-4.jpg" alt="" class="movie__item-image">
+              <span class="movie__item-icon"></span>
             </li>
             <li class="movie__item">
               <img src="img/photo-5.jpg" alt="" class="movie__item-image">
+              <span class="movie__item-icon"></span>
             </li>
             <li class="movie__item">
               <img src="img/photo-6.jpg" alt="" class="movie__item-image">
+              <span class="movie__item-icon"></span>
             </li>
             <li class="movie__item">
               <img src="img/photo-7.jpg" alt="" class="movie__item-image">
+              <span class="movie__item-icon"></span>
             </li>
           </ul>
-          <button class="movie__slider-arrow  movie__slider-arrow--left">left</button>
-          <button class="movie__slider-arrow  movie__slider-arrow--right">right</button>
+          <div class="movie__arrow-group">
+            <button class="movie__slider-arrow  movie__slider-arrow--left">left</button>
+            <button class="movie__slider-arrow  disabled  movie__slider-arrow--right">right</button>  
+          </div>
         </div>
         <section class="watch">
           <div class="watch__wrapper">
-            <h2 class="watch__title">Watch on the GO.</h2>
-            <p class="watch__description">Available on all <b>Apple, Android</b> and <b>Amazon</b> devices. <br>Enjoy on <b>TV, desktop, tablet</b> and <b>mobile.</b></p>
-            <div class="watch__subscribe">
-              <a href="#" class="watch__btn  btn">Subscribe for Free Trial</a>
-              <small class="watch__remark">Now only &pound;4.99 per month.</small>
+            <div class="watch__content-group">
+              <h2 class="watch__title">Watch on the GO.</h2>
+              <p class="watch__description">Available on all <b>Apple, Android</b> and <b>Amazon</b> devices. <br>Enjoy on <b>TV, desktop, tablet</b> and <b>mobile.</b></p>
             </div>
           </div>
         </section>
       </div>
     </section>
-
+    <section class="button-block">
+        <div class="button-block__subscribe">
+          <a href="#" class="button-block__btn  btn">Subscribe for Free Trial</a>
+          <small class="button-block__remark">Now only &pound;4.99 per month.</small>
+        </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -233,10 +245,12 @@
           <a href="" class="page-footer__link">Cookies Policy</a>
         </li>
       </ul>
-      <a href="#" class="page-footer__logo-link">
-        <img src="img/icon_logo.png" alt="DisneyLife" class="page-footer__logo-img">
-      </a>
-      <p class="page-footer__copyright">© 2017 Disney. All Rights &amp; Copyrights Reserved.</p>
+      <div class="page-footer__group">
+        <a href="#" class="page-footer__logo-link">
+          <img src="img/icon_logo.png" alt="DisneyLife" class="page-footer__logo-img">
+        </a>
+        <p class="page-footer__copyright">© 2017 Disney. All Rights &amp; Copyrights Reserved.</p>
+      </div>
     </div>
   </footer>
 </body>
