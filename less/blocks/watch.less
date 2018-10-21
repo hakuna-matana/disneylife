@@ -1,21 +1,62 @@
 .watch {
   margin-top: 110px;
+  
 }
 
 .watch__wrapper {
   .wrapper();
-  max-width: 620px;
+  // max-width: 620px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-top: 50px;
+  }
+}
+
+.watch__content-group {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 45px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 45px;
+    display: block;
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: @color-yellow;
+  }
+  
 }
 
 .watch__title {
+  position: relative;
   color: black;
   font-family: "Gotham Bold", "Arial", sans-serif;
   font-size: 35px;
   line-height: 40px;
   letter-spacing: -0.04em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(150%, -50%);
+    display: block;
+    width: 80px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: @color-pink;
+  }
 }
 
 .watch__description {
