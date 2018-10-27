@@ -51,4 +51,13 @@ $(document).ready(function(){
       }
     ]
   });
+
+  var options = $('.options__item');
+  options.on("click", function(event) {
+    var elem = event.target;
+    var prevActiveElem = $('.options__item.active');
+    prevActiveElem.removeClass('active');
+    $(elem).addClass('active');
+  });
+
 });
