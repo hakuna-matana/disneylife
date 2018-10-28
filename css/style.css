@@ -1226,6 +1226,23 @@ body {
     height: 10px;
     bottom: -15px;
   }
+  .options__item:hover .options__name {
+    color: #c9c6bf;
+  }
+  .options__item:hover::after,
+  .options__item:hover::before {
+    display: none;
+  }
+  .options__item.active {
+    cursor: pointer;
+  }
+  .options__item.active .options__name {
+    color: black;
+  }
+  .options__item.active::after,
+  .options__item.active::before {
+    display: block;
+  }
 }
 .movie {
   min-height: 1136px;
@@ -1408,6 +1425,16 @@ body {
     width: 303px;
     height: 366px;
     z-index: 30;
+  }
+}
+@media (max-width: 700px) {
+  .movie__item-image:hover {
+    cursor: default;
+    margin: 20px;
+    border: none;
+  }
+  .movie__item-image:hover + .movie__item-icon {
+    display: none;
   }
 }
 .watch {

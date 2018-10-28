@@ -186,3 +186,14 @@
     z-index: 30;
   }
 }
+
+@media (max-width: 700px) {
+  .movie__item-image:hover {
+    cursor: default;
+    margin: 20px;
+    border: none;
+    & + .movie__item-icon {
+      display: none;
+    }
+  }
+}

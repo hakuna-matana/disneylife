@@ -200,4 +200,26 @@
     height: 10px;
     bottom: -15px;
   }
+
+  .options__item {
+    &:hover {
+      .options__name {
+        color: #c9c6bf;
+      }
+      &::after, &::before {
+        display: none;
+      }
+    }
+    &.active {
+      cursor: pointer;
+      
+      .options__name {
+        color: black;
+      }
+      &::after, &::before {
+        display: block;
+      }
+    }
+  }
+
 }
